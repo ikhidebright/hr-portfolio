@@ -11,16 +11,25 @@ export default {
       { hid: 'description', name: 'description', content: '' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: "stylesheet", href: 'https://fonts.googleapis.com/css2?family=Nunito:wght@200;600&display=swap' }
     ]
   },
 
+  router: {
+    // redirect when user goes to homepage
+		middleware: ["redirect"]
+	},
+
   // Global CSS (https://go.nuxtjs.dev/config-css)
   css: [
+    '~/assets/style.css'
   ],
 
   // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
   plugins: [
+    "~/plugins/alert/index.js",
+    { src: '~plugins/vue-highcharts.js', ssr: false }
   ],
 
   // Auto import components (https://go.nuxtjs.dev/config-components)

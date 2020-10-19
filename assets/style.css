@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;600&display=swap');
+
+.v-input input {
+    font-family: Nunito;
+}
+
+label {
+    font-family: Nunito;
+}
+
+a {
+    text-decoration: none;
+    font-family: Nunito;
+    font-weight: bold;
+}
+
+.headT {
+text-align: left;
+font: normal normal 600 30px/44px Nunito;
+letter-spacing: 0px;
+color: #000000;
+opacity: 1;
+}
