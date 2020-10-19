@@ -6,7 +6,7 @@ export const state = () => ({
     ],
     headersAllCompany: [
           {
-            class: 'accent lighten5 rounded-l-lg',
+            class: 'accent lighten5 rounded-l-lg pb-n4',
             text: 'ONBOARDING DATE',
             align: 'start',
             sortable: false,
@@ -14,7 +14,7 @@ export const state = () => ({
           },
           { 
             text: 'COMPANY NAME',
-            class: 'accent',
+            class: 'accent pb-n4',
             value: 'name',
             sortable: false,
             },
@@ -22,25 +22,25 @@ export const state = () => ({
             text: 'EMPLOYEE SIZE',
             value: 'employeeSize',
             sortable: false,
-            class: 'accent', 
+            class: 'accent pb-n4', 
             },
           { 
             text: 'LOCATION',
             value: 'location',
             sortable: false,
-            class: 'accent'
+            class: 'accent pb-n4'
             },
           { 
             text: 'STATUS',
             value: 'status',
             sortable: false,
-            class: 'accent', 
+            class: 'accent pb-n4', 
             },
           { 
             text: '',
             value: 'action',
             sortable: false,
-            class: 'accent rounded-r-lg', 
+            class: 'accent pb-n4 rounded-r-lg', 
             },
     ],
     deatilsAllCompany: [
@@ -263,15 +263,15 @@ export const state = () => ({
     ],
     headersPaused: [
         {
-          class: 'accent lighten5 rounded-l-lg',
-          text: 'Last Active',
+          class: 'accent pb-n4 lighten5 rounded-l-lg',
+          text: 'LAST ACTIVE',
           align: 'start',
           sortable: false,
           value: 'onBoardingDate',
         },
         { 
           text: 'COMPANY NAME',
-          class: 'accent',
+          class: 'accent pb-n4',
           value: 'name',
           sortable: false,
           },
@@ -279,7 +279,7 @@ export const state = () => ({
           text: '',
           value: 'action',
           sortable: false,
-          class: 'accent rounded-r-lg', 
+          class: 'accent pb-n4 rounded-r-lg', 
           },
     ],
     deatilsPaused: [
@@ -314,51 +314,6 @@ export const state = () => ({
             teams: ['Tech', 'Internet', 'Computing']
           },
           {
-            id: 3,
-            name: 'Unilever & Sons Co.',
-            onBoardingDate: '22-07-20',
-            employeeSize: 74,
-            location: 'Kaduna, Nigeria',
-            status: 'Active',
-            action: true,
-            adderss: 'ABC House CBD, Abuja',
-            sector: 'Mining',
-            description: 'Mining the earth precious metals',
-            phone: '0905-881-3791',
-            email: 'info@unilever.com',
-            teams: ['Mining', 'Engineering', 'Machinery']
-          },
-          {
-            id: 4,
-            name: 'Aero Contractors',
-            onBoardingDate: '22-07-20',
-            employeeSize: 241,
-            location: 'Dakar, Senegal',
-            status: 'Active',
-            action: true,
-            adderss: 'Nnamdi Azikiwe International Airport Abuja',
-            sector: 'Hospitality',
-            description: 'Fly for free',
-            phone: '0703-695-8547',
-            email: 'info@aero.com',
-            teams: ['Hotel', 'Hospitality', 'Spa']
-          },
-          {
-            id: 5,
-            name: 'Arik Air',
-            onBoardingDate: '22-07-20',
-            employeeSize: 387,
-            location: 'Osun, Nigeria',
-            status: 'Active',
-            action: true,
-            adderss: 'Nnamdi Azikiwe International Airport Abuja',
-            sector: 'Airline',
-            description: 'The best Airline in town',
-            phone: '0905-636-8857',
-            email: 'info@arik.com',
-            teams: ['Air Travel', 'Space']
-          },
-          {
             id: 9,
             name: 'Aero Contractors',
             onBoardingDate: '22-07-20',
@@ -372,21 +327,6 @@ export const state = () => ({
             phone: '0703-695-8547',
             email: 'info@aero.com',
             teams: ['Hotel', 'Hospitality', 'Spa']
-          },
-          {
-            id: 10,
-            name: 'Arik Air',
-            onBoardingDate: '22-07-20',
-            employeeSize: 387,
-            location: 'Lagos, Nigeria',
-            status: 'Invited',
-            action: true,
-            adderss: 'Nnamdi Azikiwe International Airport Abuja',
-            sector: 'Airline',
-            description: 'The best Airline in town',
-            phone: '0905-636-8857',
-            email: 'info@arik.com',
-            teams: ['Air Travel', 'Space']
           },
           {
             id: 11,

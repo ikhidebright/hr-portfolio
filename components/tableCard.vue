@@ -31,6 +31,24 @@
     hide-default-footer
     class="elevation-0 theme--light font-weight-light text-caption"
   >
+
+  <template v-slot:[`header.name`]="{ header }">
+      <p class="headTable text-truncate font-weight-bold pb-n4">{{ header.text }}</p>
+    </template>
+  <template v-slot:[`header.onBoardingDate`]="{ header }">
+      <p class="headTable text-truncate font-weight-bold pb-n4">{{ header.text }}</p>
+    </template>
+  <template v-slot:[`header.employeeSize`]="{ header }">
+      <p class="headTable text-truncate font-weight-bold pb-n4">{{ header.text }}</p>
+    </template>
+  <template v-slot:[`header.status`]="{ header }">
+      <p class="headTable text-truncate font-weight-bold pb-n4">{{ header.text }}</p>
+    </template>
+  <template v-slot:[`header.location`]="{ header }">
+      <p class="headTable text-truncate font-weight-bold pb-n4">{{ header.text }}</p>
+    </template>
+
+
   <template v-slot:[`item.status`]="{ item }">
       <v-chip
         :color="getColor(item.status)"
@@ -45,9 +63,25 @@
 
   <template v-slot:[`item.name`]="{ item }">
       <p
-        class="font-weight-regular"
+        class="font-weight-regular text-truncate"
       >
         {{ item.name }}
+      </p>
+    </template>
+
+  <template v-slot:[`item.location`]="{ item }">
+      <p
+        class="d-inline-block text-truncate"
+      >
+        {{ item.location }}
+      </p>
+    </template>
+
+  <template v-slot:[`item.onBoardingDate`]="{ item }">
+      <p
+        class="d-inline-block text-truncate"
+      >
+        {{ item.onBoardingDate }}
       </p>
     </template>
 
@@ -162,5 +196,10 @@ import { mapActions } from 'vuex'
 label, .showby {
     font-family: Nunito;
     font-size: 12px;
+}
+
+.headTable {
+    font-family: Nunito;
+    font-size: 11px;
 }
 </style>
