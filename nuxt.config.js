@@ -3,8 +3,7 @@ import colors from 'vuetify/es5/util/colors'
 export default {
   // Global page headers (https://go.nuxtjs.dev/config-head)
   head: {
-    titleTemplate: '%s - hr-port',
-    title: 'hr-port',
+    title: 'HR Port',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -57,8 +56,8 @@ export default {
       // light: true,
       themes: {
         light: {
-          primary: colors.blue.darken2,
-          accent: colors.grey.darken3,
+          primary: "#003187",
+          accent: "#f4f4f4",
           secondary: colors.amber.darken3,
           info: colors.teal.lighten1,
           warning: colors.amber.base,

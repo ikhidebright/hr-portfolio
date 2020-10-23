@@ -5,24 +5,24 @@ export const state = () => ({
             amount: 253,
             gain: true,
             diff: 3.2,
-            color: '#EFCF00',
-            icon: 'mdi-home-modern'
+            color: '#00318714',
+            icon: '/icons/tc.png'
         },
         {
             title: 'Total Employees',
             amount: 9036,
             gain: true,
             diff: 20.5,
-            color: '#9E5DB8',
-            icon: 'mdi-account-multiple'
+            color: '#9B59B626',
+            icon: '/icons/te.png'
         },
         {
             title: 'Paused Accounts',
             amount: 32,
             gain: false,
-            color: 'primary',
+            color: '#E67E2224',
             diff: 32,
-            icon: 'mdi-pause'
+            icon: '/icons/pa.png'
         }
     ],
 

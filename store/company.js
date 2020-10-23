@@ -258,7 +258,7 @@ export const state = () => ({
 
     // data for paused accounts
     itemsPaused: [
-      { title: 'Pause account', func: 'pause' },
+      { title: 'Pause account', func: 'pause', path: true },
       { title: 'View company details', path: true }
     ],
     headersPaused: [
